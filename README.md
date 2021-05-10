@@ -73,12 +73,6 @@ query{
     email,
     password
   }
-# User by id
-query{
-  users(id:id_value){
-    id
-    username
-  }
 ``` 
 # Get all Quizze Details
 ```bash
@@ -97,7 +91,7 @@ query{
     }
   }
 }
-its return Quizze list with category and answer list question
+Its return Quizze list with category and answer list question.
 ```
 # Register user
 ```bash
@@ -110,16 +104,8 @@ mutation{
     refreshToken
   } 
 }
+Its return true success,token,refreshtoken of register user.
 ```
-# Get All user
-```bash
-query{
-  users{
-    email,username,id
-  }
-}
-```
-
 # Verify Account of User
 ```bash
 #Verify Account of user by valid token
@@ -129,6 +115,7 @@ mutation{
     errors
   }
 }
+Its return Sucees=True otherwise Error if token value not valid.
 ```
 # Get User Details Based on username and password
 ```bash
@@ -144,6 +131,7 @@ mutation{
     }
   }
 }
+Its return of sucess,token,refreshtoken along with user details.
 ```
 # Update User
 ```bash
@@ -154,6 +142,7 @@ mutation{
     errors
   }
 }
+Its return sucess=True otherwise throw error in case of details is not valid.
 ```
 
 
