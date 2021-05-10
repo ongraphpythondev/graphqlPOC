@@ -47,13 +47,8 @@ pip install -r requirments.txt
 ## Running:
 
 ```bash
-# activate the virtual environment
-venv\Scripts\activate # for windows
-      or
-source venv/bin/activate # for linux
+# activate the virtual environment and run the server
 
-
-# run server
 1.python manage.py makemigrations
 2.python manage.py migrate
 3.python manage.py createsuperuser
