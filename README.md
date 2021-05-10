@@ -1,6 +1,8 @@
 # GraphQL_CRUD_Application
 
-<p> Quizze POC</p>
+<p> Features of this POC is
+1.Authentication of User with JWT token
+2.Its Contain information like Queez Application</p>
 
 ## Prerequisites:
 You will need the following programmes properly installed on your computer.
@@ -101,31 +103,61 @@ query{
 }
 its return Quizze list with category and answer list question
 ```
-# Create user
+# Register user
 ```bash
 #Put Field value and execute
 mutation{
-  createUser(username:"username",password:"password"){
-    ok
+  register(email:"email",username:"username",password1:"password",password2:"password"){
+    success,
+    errors,
+    token,    
+    refreshToken
   } 
+}
+```
+# Get All user
+```bash
+query{
+  users{
+    email,username,id
+  }
+}
+```
+
+# Verify Account of User
+```bash
+#Verify Account of user by valid token
+mutation{
+  verifyAccount(token: "token value"){
+    success
+    errors
+  }
+}
+```
+# Get User Details Based on username and password
+```bash
+#update Details of login user
+mutation{
+  tokenAuth(username:"username",password:"password"){
+    success
+    errors
+    token
+    refreshToken
+    user{
+      username
+    }
+  }
 }
 ```
 # Update User
 ```bash
-#update by id with field value
+#update Details of login user
 mutation{
-  updateUser(id:id_value,updated Field list value){
-    ok
-  } 
+  updateAccount(fieldname:"value"){
+    success
+    errors
+  }
 }
 ```
-# Delete User
-```bash
-#delete user by id
-mutation{
-  deleteUser(id:id_value){
-    ok
-  } 
-}
-```
+
 
