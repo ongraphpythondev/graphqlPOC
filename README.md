@@ -1,7 +1,8 @@
 # GraphQL_CRUD_Application
 
 <p> Features of this POC is
-1.Authentication of User with JWT token
+<br>
+1.Authentication of User with JWT token<br>
 2.Its Contain information like Queez Application</p>
 
 ## Prerequisites:
