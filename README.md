@@ -2,8 +2,9 @@
 
 <p> Features of this POC is
 <br>
-1.Authentication of User with JWT token<br>
-2.Its Contain information like Queez Application</p>
+1.Implementation of GraphQL<br>
+2.Authentication of User with JWT token<br>
+3.Its Contain information like Quizze Application</p>
 
 ## Prerequisites:
 You will need the following programmes properly installed on your computer.
@@ -60,6 +61,7 @@ pip install -r requirments.txt
 ```
 ## Url
 http://127.0.0.1:8000/admin <br>
+By using above url we can login and Perform operation with admin panel.<br>
 http://127.0.0.1:8000/graphql
 
 ## Use graphiQL
